@@ -1,0 +1,116 @@
+#tree-panel-body {
+top: 60px !important;
+left: 10px !important
+}
+
+a:link {
+	color: rgb(51, 102, 153); text-decoration: underline;
+}
+a:visited {
+	color: rgb(157, 0, 0); text-decoration: underline;
+}
+a:hover {
+	color: rgb(51, 102, 153); text-decoration: underline;
+}
+a.bread:link {
+	color: rgb(51, 102, 153); padding-right: 4px; padding-left: 4px; font-family: calibri; font-size: 6.5pt; text-decoration: none;
+}
+html {
+	-ms-overflow-y: scroll;
+}
+a.toolbar:hover {
+	margin: 1px; padding: 0px 2px; color: rgb(0, 153, 204); text-decoration: none;
+}
+a.toolbar:visited {
+	margin: 1px; padding: 0px 2px; border: 0px currentColor; border-image: none; color: rgb(51, 102, 153); text-decoration: none;
+}
+a.toolbar {
+	margin: 1px; padding: 0px 2px; border: 0px currentColor; border-image: none; color: rgb(51, 102, 153); text-decoration: none;
+}
+span.toolbar {
+	color: rgb(64, 64, 64); font-weight: bold;
+}
+#main {
+	background: rgb(255, 255, 255); margin: 0em 0%; height: 100%; padding-top: 0em; padding-bottom: 1em; padding-left: 35px;
+}
+td.bottomleft {
+	margin: 0px 0px 20px; padding: 10px 8px; color: rgb(0, 0, 0); font-family: "calibri", calibri, arial, helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal;
+}
+td.bottomright {
+	margin: 0px 0px 20px; padding: 10px 8px; color: rgb(0, 0, 0); font-family: "calibri", calibri, arial, helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal;
+}
+td.bottomright {
+	border-top-color: rgb(151, 203, 46); border-top-width: 2px; border-top-style: solid;
+}
+td.bottomleft {
+	border-top-color: rgb(151, 203, 46); border-top-width: 2px; border-top-style: solid;
+}
+.searchword1 {
+	background-color: yellow;
+}
+.searchword2 {
+	background-color: yellow;
+}
+.searchword3 {
+	background-color: yellow;
+}
+.searchword4 {
+	background-color: yellow;
+}
+.searchword5 {
+	background-color: yellow;
+}
+.termination .term_form .banner__alert {
+	margin-bottom: 15px;
+}
+.termination .banner {
+	padding-top: 1.6em; padding-bottom: 1.6em; display: block; max-height: none !important;
+}
+.termination .banner.inactive {
+	display: none;
+}
+.termination .banner.hidden {
+	display: none;
+}
+.termination .banner .banner_icon {
+	width: 24px; padding-top: 0px; float: left; display: block;
+}
+.termination .banner .banner_title {
+	padding-left: 6px; float: left;
+}
+.termination .banner .banner_text {
+	padding: 6px 0px 0px 30px;
+}
+.banner_text {
+	padding-left: 0px;
+}
+.banner_texttitle {
+	width: 90%; line-height: 1.25em; font-family: "gustan-extrabold","arial","????","Hiragino Sans GB","??","SimHei",sans-serif; font-size: 1.2em; font-style: normal; font-weight: 400; margin-bottom: 0.41em;
+}
+.banner_text p {
+	display: block;
+}
+.banner_textcopy {
+	display: block;
+}
+.banner_text p strong {
+	line-height: 1.25em; font-family: "fira-medium","arial","????","Hiragino Sans GB","??","SimHei",sans-serif; font-size: 1em; font-style: normal; font-weight: 400;
+}
+.banner_textcopy strong {
+	line-height: 1.25em; font-family: "fira-medium","arial","????","Hiragino Sans GB","??","SimHei",sans-serif; font-size: 1em; font-style: normal; font-weight: 400;
+}
+.alert_bannertitle {
+	font: 600 2.3em/1.08em arial; margin: 0pt; padding: 0px; width: 8cm; height: auto; text-align: center; color: rgb(255, 255, 255); text-transform: none; text-indent: 0cm; letter-spacing: normal; clear: none; text-decoration: none; word-spacing: normal; float: none; white-space: normal;
+}
+.alert_textcopy {
+	font: 1.2em/1.1em calibri; margin: 0pt; padding: 0px 18px 0px 0px; height: auto; text-align: left; color: rgb(255, 255, 255); text-transform: none; text-indent: 0cm; letter-spacing: normal; clear: none; text-decoration: none; word-spacing: normal; vertical-align: baseline; float: none; white-space: normal; max-width: 505px;
+}
+table.belowtopictext td {
+	width: 302px !important;
+}
+table.tableintopic td {
+	padding: 10px !important;
+}
+table.aboveheading td p.bodytext {
+	margin-right: 0px !important;
+}

@@ -1,0 +1,234 @@
+A:link
+{
+	font: 8pt verdana;
+	color: #336699;
+	text-decoration: none;
+}
+A:visited
+{
+	font: 8pt verdana;
+	color: #336699;
+	text-decoration: none;
+}
+A:hover
+{
+	font: 8pt verdana;
+	color: #0099CB;
+	text-decoration: underline;
+}
+BODY {
+	MARGIN: 0em 0%
+}
+A.selectedtab:link
+{
+	border-right: #004080 1px solid;
+	padding-right: 8px;
+	border-top: #004080 1px solid;
+	padding-left: 8px;
+	padding-bottom: 2px;
+	margin: 0px;
+	font: 11px "arial";
+	border-left: #004080 1px solid;
+	color: #004080;
+	padding-top: 1px;
+	border-bottom: 0px;
+	background-color: white;
+	text-align: center;
+	text-decoration: none;
+}
+A.selectedtab:visited
+{
+	border-right: #004080 1px solid;
+	padding-right: 8px;
+	border-top: #004080 1px solid;
+	padding-left: 8px;
+	padding-bottom: 2px;
+	margin: 0px;
+	font: 11px "arial";
+	border-left: #004080 1px solid;
+	color: #004080;
+	padding-top: 1px;
+	border-bottom: 0px;
+	background-color: white;
+	text-align: center;
+	text-decoration: none;
+}
+A.tab:link
+{
+	border-right: #004080 1px solid;
+	padding-right: 8px;
+	border-top: #004080 1px solid;
+	padding-left: 8px;
+	padding-bottom: 0px;
+	margin: 0px;
+	font: 11px "arial";
+	border-left: #004080 1px solid;
+	color: #004080;
+	padding-top: 1px;
+	border-bottom: white 0px solid;
+	background-color: white;
+	text-align: center;
+	text-decoration: none;
+}
+A.tab:visited
+{
+	border-right: #004080 1px solid;
+	padding-right: 8px;
+	border-top: #004080 1px solid;
+	padding-left: 8px;
+	padding-bottom: 2px;
+	margin: 0px;
+	font: 11px "MS Sans Serif";
+	border-left: #004080 1px solid;
+	color: #004080;
+	padding-top: 1px;
+	border-bottom: white 0px solid;
+	background-color: white;
+	text-align: center;
+	text-decoration: none;
+}
+A.tab:hover
+{
+	border-right: #004080 1px solid;
+	padding-right: 8px;
+	border-top: #004080 1px solid;
+	padding-left: 8px;
+	padding-bottom: 2px;
+	margin: 0px;
+	font: 11px "MS Sans Serif";
+	border-left: #004080 1px solid;
+	color: #004080;
+	padding-top: 1px;
+	border-bottom: white 0px solid;
+	background-color: #EFEEE1;
+	text-align: center;
+	text-decoration: none;
+}
+#header {
+	background: url('TOOLKIT_BANNER_EXPAND.gif') repeat-x;
+	height: 74px;
+	padding: 0;
+	}
+#header h1 {
+	float: left;
+	margin: 0;
+	text-indent: -999px;
+	background: url('OPS_MANUAL_BANNER.gif') no-repeat left;
+	height: 74px;
+	width: 283px;
+	}
+#header h2 {
+	float: right;
+	margin: 0;
+	text-indent: -999px;
+	background: url('TOOLKIT_BANNER_LOGO.gif') no-repeat right;
+	height: 74px;
+	width: 239px
+	}
+#header h2 a {
+	display: block;
+	height: 72px;
+	width: 237px;
+	border: none;
+}
+#tabs
+{
+	margin-top: 2px;
+	padding-left: 3px;
+	border-bottom: #004080 1px solid;
+}
+
+TD.breadcrumbs
+{
+	border-right: 0px;
+	padding-right: 8px;
+	border-top: 0px;
+	padding-left: 8px;
+	background: #EFEEE1 repeat-x;
+	padding-bottom: 4px;
+	margin: 0px;
+	border-left: 1px;
+	color: black;
+	padding-top: 4px;
+	border-bottom: black 0px solid;
+	height: 14px;
+	text-align: left;
+	font-family: verdana;
+	font-size: 10px;
+}
+A.breadcrumbs:link
+{
+	padding-right: 4px;
+	padding-left: 4px;
+	color: #336699;
+	text-decoration: none;
+	font-family: verdana;
+}
+A.breadcrumbs:visited
+{
+	padding-right: 4px;
+	padding-left: 4px;
+	color: #336699;
+	text-decoration: none;
+	font-family: verdana;
+}
+A.breadcrumbs:hover
+{
+	border: 1px solid #808000;
+	padding-right: 3px;
+	padding-left: 3px;
+	background: white url( '../IMAGES/MENU_HOVER.html' ) repeat-x;
+	padding-bottom: 2px;
+	margin: 0px;
+	color: #336699;
+	padding-top: 2px;
+	text-decoration: none;
+	font-family: verdana;
+}
+A.homenav:hover
+{
+	border: 1px solid #808000;
+	padding-right: 3px;
+	padding-left: 4px;
+	background: white url( '../IMAGES/MENU_HOVER.html' ) repeat-x;
+	padding-bottom: 2px;
+	margin: 0px;
+	color: #336699;
+	padding-top: 2px;
+	text-decoration: none;
+	font-family: verdana;
+}
+A.homenav:link
+{
+	padding-right: 4px;
+	padding-left: 4px;
+	color: #336699;
+	text-decoration: none;
+	font-family: verdana;
+}
+A.homenav:visited
+{
+	padding-right: 4px;
+	padding-left: 4px;
+	color: #336699;
+	text-decoration: none;
+	font-family: verdana;
+}
+TD.homenav
+{
+	border-right: 0px;
+	padding-right: 8px;
+	border-top: 0px;
+	padding-left: 8px;
+	background: white repeat-x;
+	padding-bottom: 4px;
+	margin: 0px;
+	border-left: 1px;
+	color: black;
+	padding-top: 4px;
+	border-bottom: black 0px solid;
+	height: 14px;
+	text-align: left;
+	font-family: verdana;
+	font-size: 10px;
+}

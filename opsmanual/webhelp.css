@@ -1,0 +1,271 @@
+﻿
+
+.loading
+{
+	text-align: center;
+	vertical-align: middle;
+	font-size: 11px;
+	width: 40px;
+	height: 200px;
+	background-image: url(loading_blue.gif); 
+	background-repeat: no-repeat; 
+	background-position: center; 
+	padding-top: 70px;
+}
+
+/*---- HEADER ---------------*/
+div#header {
+    font-family: "Calibri Light", arial, helvetica, sans-serif; calibri light;
+    font-size: 30pt;
+	background: #7F99BE;
+    padding: 10px;
+    height: 75px;/*must be in px*/
+    background-color: #000000;
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+
+.headertext1 {
+    font-family: "Calibri Light", arial, helvetica, sans-serif; calibri light;
+    font-size: 30pt;
+    position: absolute;
+    top: 45%;
+    left: 450px;
+    transform: translate(-50%, -50%);
+}
+
+.headertext2 {
+    font-family: "Calibri", arial, helvetica, sans-serif; calibri light;
+    font-size: 36pt;
+    font-weight: bold;
+    position: absolute;
+    top: 45%;
+    left: 600px;
+    transform: translate(-50%, -50%);
+}
+
+.x-toolbar { border-width: 0 0 1px }
+
+.header-left { float: left;  white-space: nowrap;}
+
+#mainToolbar .x-form-field, #mainToolbar .checkbox-text { font: 11px calibri,helvetica,sans-serif; }
+
+/*----Top Of Page link----*/
+.topOfPage { font-size: 11px; padding-left: 10px; padding-bottom:5px; }
+
+/*------ Footer --------*/
+.footer
+{
+	background-color: rgb(50,56,73);
+	width: 100%;
+	height: 60px;
+	font-size: 10px;
+}
+.footer td { padding:10px; }
+.footer-left { text-align: left; white-space: nowrap; }
+.footer-right { text-align: right; white-space: nowrap; }
+.footer-center { text-align: center; }
+
+/*---- West panel ------------------ Index & Tree -----------------------*/
+/*--- Index ---*/
+
+
+/*--- Tabs Aria ---*/
+.x-panel .x-grid-body { border-width: 0px;}
+#tab-panel  .x-box-layout-ct { border-width: 0px;}
+
+/*--- Tree -------------*/
+#tree-panel-body { border-top-width: 0px; }
+/* override extjs ext-all.css for tree*/
+.x-grid-row-selected .x-grid-cell, .x-grid-row-selected .x-grid-rowwrap-div { background-color: #ffffff !important; color: #323849; font-weight: bold; }
+.x-grid-row-over .x-grid-cell, .x-grid-row-over .x-grid-rowwrap-div { background-color: #ffffff !important; color: #323849; }
+.x-tree-icon.x-tree-icon-leaf { background-image:url(images/leaf.gif);  }
+.x-grid-row .x-tree-icon.x-tree-icon-parent { background-image: url(images/main_topic.gif); }
+.x-grid-row.x-grid-tree-node-expanded .x-tree-icon.x-tree-icon-parent { background-image: url(images/leaf.gif); }
+.x-grid-view  { background-color: #DDEAFC; padding: 5px;}
+.x-grid-row .x-grid-cell { background-color: #ffffff; color: #323849;}
+
+
+/*---- Topic -------------------------------------------------------*/
+#start-panel { padding: 10px; }
+.homepage { background-image: url(images/gradient-bg.gif); }
+.aboveheading { display: none; }
+.belowheading { display: none; }
+
+/*--- panels header (title) ---*/
+.x-panel-header-text { font-weight: normal; }
+
+
+/*--- toolbar ---*/
+.tree-node-toolbar-no-bg-image { background-color: #DDEAFC; background-image: none; }
+.x-toolbar .ytb-text { padding: 0px;}
+.checkbox-text
+{
+	font-family: calibri;
+	font-size: 10pt;
+	margin-left: 3px;
+	position: relative;
+	bottom: 1px;
+}
+  * html .checkbox-text {   
+	margin-left: 0px;   
+} 
+/*--- Icons ---*/
+/*--- main toolbar ---*/
+.homeIcon { background-image: url(images/home.png); }
+.upIcon { background-image: url(images/up.gif); }
+.downIcon { background-image: url(images/down.gif); }
+
+
+.EditIcon { background-image: url(images/edit.png); }
+.editLiveIcon { background-image: url(images/edit_live.png); }
+.emailThisPageIcon { background-image: url(images/email.png); }
+.sendFeedbackIcon { background-image: url(images/feedback.html); }
+
+.printIcon { background-image: url(images/printer.png); }
+.searchIcon { background-image: url(images/search.png); }
+
+/* tree toolbar */
+.expand { background-image: url(images/expand_all.gif); }
+.collapse { background-image: url(images/collapse_all.gif); }
+
+#checkBoxForm {
+    padding-top: 3px;
+}
+
+
+div#mainToolbar-innerCt {
+    top: -6px !important;
+}
+#ext-gen1303 {
+    z-index: 99;
+}
+
+#headerTitle img {
+    margin-left: 25px;
+}
+
+
+
+
+.content-panel_header {
+    background-image: disabled ;
+}
+
+.x-panel-header-default {
+    background-image: disabled ;
+}
+
+
+div.x-box-inner {
+    background-color: #fff;
+}
+
+div.x-component.x-header-text-container.x-panel-header-text-container.x-panel-header-text-container-default.x-box-item.x-component-default {
+    background-color: rgb(230,230,230);
+}
+
+div.x-grid-cell-inner.x-grid-cell-inner-treecolumn {
+    height: 27px;
+}
+
+div.x-panel-header.x-header.x-header-horizontal.x-docked.x-unselectable.x-panel-header-default.x-horizontal.x-panel-header-horizontal.x-panel-header-default-horizontal.x-top.x-panel-header-top.x-panel-header-default-top.x-docked-top.x-panel-header-docked-top.x-panel-header-default-docked-top {
+    background-color: rgb(230,230,230);
+    color: rgb(46,46,46);
+}
+
+div.x-toolbar-text.x-box-item.x-toolbar-item.x-toolbar-text-default {
+    padding-top: 3px;
+}
+
+div.x-toolbar.x-small-editor-no-bg-image.x-toolbar-default.x-box-layout-ct {
+    border-color: #8f108f;
+}
+
+
+img.x-tool-img.x-tool-collapse-left {
+    background-color: rgb(230,230,230);
+}
+
+input.x-form-field.x-form-text.x-form-empty-field {
+    padding-bottom: 5px;
+}
+
+
+
+table.footer {
+    background-color: #000000;
+}
+
+td.footer-center {
+    background-color: #000000;
+    height: 100px;
+}
+
+td.footer-left {
+    background-color: #000000;
+}
+
+td.footer-right {
+    background-color: #000000;
+}
+
+td.footer-right a img {
+    padding-right: 54px;
+}
+
+td.footer-right p {
+    color: #7d7d7d;
+    display: block;
+    font-family: "fira-book","arial","冬青黑体","Hiragino Sans GB","黑体","SimHei",sans-serif;
+    font-size: 1.3padding: 1.15384615em 0em;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 25px;
+    padding-right: 50px;
+}
+
+span.x-tree-node-text {
+    font-size: 14px;
+    margin: 7px;
+    padding: 0px;
+    line-height: 15px;
+    letter-spacing: 0.1px;
+	text-transform:
+}
+
+span.x-btn-inner.x-btn-inner-center {
+    font-size: 15px;
+}
+
+a.x-btn.x-unselectable.x-btn-toolbar.x-box-item.x-toolbar-item.x-btn-default-toolbar-small.x-icon-text-left.x-btn-icon-text-left.x-btn-default-toolbar-small-icon-text-left.x-over.x-btn-over.x-btn-default-toolbar-small-over {
+    left: 30px;
+    top: 4px;
+}
+
+span.checkbox-text {
+    font-size: 11px;
+    font-weight: normal;
+    letter-spacing: .2px;
+}
+
+#headerTitle {
+    font-size: 36px;
+}
+
+
+#ext-gen1259 {
+    text-decoration: underline;
+}
+
+#ext-gen1326 {
+    text-decoration: underline;
+}
+
+#ext-gen1488 {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+
+

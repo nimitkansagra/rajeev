@@ -1,0 +1,15 @@
+SetEnv DB_HOST "localhost"
+SetEnv DB_PORT 3306
+SetEnv DB_DB "appfedsfee_project_visa"
+SetEnv DB_USER "appfedsfee_project_visa"
+SetEnv DB_PASS "ZrI=@3Ka7nqQ"
+
+SetEnv SITE_URL "https://cpanel.appfedsfee.com"
+SetEnv API_URL "https://cpanel.appfedsfee.com/api/index.php"
+
+RewriteEngine on
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]

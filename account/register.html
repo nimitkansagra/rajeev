@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>RealMe - create a login</title>
+  <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="imagetoolbar" content="no">
+  <meta name="robots" content="all">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon"
+    data-preload="true">
+  <link rel="stylesheet" type="text/css"
+    href="./assets/bundle.min.register.css"
+    data-preload="true" crossorigin="anonymous">
+
+  <style>
+    #simplemodal-overlay {
+      background: #000
+    }
+
+    #simplemodal-container {
+      background: #fff;
+      padding: 30px 20px 20px;
+      text-align: left;
+      -webkit-box-shadow: 0 0 30px 2px rgba(0, 0, 0, .5);
+      -moz-box-shadow: 0 0 30px 2px rgba(0, 0, 0, .5);
+      box-shadow: 0 0 30px 2px rgba(0, 0, 0, .5);
+      overflow: hidden
+    }
+
+    #simplemodal-container h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #1C5B96;
+      font-size: 20px;
+      line-height: 26px;
+      margin-bottom: 10px
+    }
+
+    #simplemodal-container .simplemodal-data {
+      padding: 8px;
+      overflow: hidden
+    }
+
+    #simplemodal-container h1 {
+      margin-bottom: 20px
+    }
+  </style>
+  <style>
+    .no_display {
+      display: none
+    }
+
+    .error_container h1 {
+      color: #333;
+      font-size: 1.2em;
+      font-family: 'Segoe UI Light', Segoe, 'Segoe UI', SegoeUI-Light-final, Tahoma, Helvetica, Arial, sans-serif;
+      font-weight: lighter
+    }
+
+    .error_container p {
+      color: #333;
+      font-size: .8em;
+      font-family: 'Segoe UI', Segoe, SegoeUI-Regular-final, Tahoma, Helvetica, Arial, sans-serif;
+      margin: 14px 0
+    }
+  </style>
+</head>
+
+<body style="">
+  <div id="no_cookie" class="no_display">
+    <div class="error_container">
+      <div>
+        <h1>We can't sign you in</h1>
+        <p>Your browser is currently set to block cookies. You need to allow cookies to use this service.</p>
+        <p>Cookies are small text files stored on your computer that tell us when you're signed in. To learn how to
+          allow cookies, check the online help in your web browser.</p>
+        <script
+          nonce="">if (!navigator.cookieEnabled) document.getElementById('no_cookie').className = ''; if (typeof $diags !== 'undefined') $diags.initializationSuccessful = true;</script>
+      </div>
+    </div>
+  </div><iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;"
+    src="./assets/saved_resource.html"></iframe>
+  <div id="GOOGLE_INPUT_CHEXT_FLAG" input=""
+    input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}"
+    style="display: none;"></div>
+  <div id="app">
+    <div id="header">
+      <header class="banner cobranding" style="background-color: rgb(0, 0, 0);">
+        <div class="inner"><img id="img-realme-logo" src="./assets/realme-header-logo-white.png"
+            alt="RealMe" class="realme-logo">
+          <div class="third-party-logo" id="agency-logo"><img id="img-agency-logo"
+              src="./assets/aHR0cHM6Ly93d3cuaW1taWdyYXRpb24uZ292dC5uei9hcHBsaWNhbnQvYjJjUFJE.png">
+          </div>
+        </div>
+      </header>
+      <div class="banner-message info">
+        <div class="inner"><span class="back-icon"></span><a id="realme-return-link"
+            href="./login.html"
+            title="Go back to  Immigration New Zealand" tabindex="20" class="linkStopDoubleClick return-link"
+            data-realmebaseurl="./login.html">Go back to Immigration New Zealand</a></div>
+      </div>
+      <div class="banner-message error" style="display:none">
+        <div class="inner">
+          <p id="agency-error-message"></p>
+        </div>
+      </div>
+      <div class="banner-message info" style="display:none">
+        <div class="inner">
+          <p id="agency-message"></p>
+          <p id="global-message"></p>
+        </div>
+      </div>
+      <div id="ie-not-supported" class="banner-message message error" style="display:none">
+        <div class="inner">
+          <p id="agency-error-message">Internet Explorer is not a supported browser. RealMe recommends using a modern
+            browser, such as <a href="https://www.microsoft.com/en-us/edge" target="_blank">Microsoft Edge</a>, <a
+              href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">Mozilla Firefox</a> or <a
+              href="https://www.google.com/intl/en_nz/chrome/" target="_blank">Google Chrome</a>.</p>
+        </div>
+      </div>
+      <div id="banner-login-fail" style="display:none" class="banner-message has-icon error"><span class="icon"></span>
+        <div class="inner"><span class="banner-message-icon"></span>
+          <p><span class="banner-message-title">Your login attempt was unsuccessful.</span></p>
+          <p>Please check your username or password.<br>If you are unable to log in, you can follow the "Forgot
+            Username" or "Forgot Password" link below.</p>
+        </div>
+      </div>
+      <div id="banner-account-locked" style="display:none" class="banner-message has-icon message error"><span
+          class="icon"></span>
+        <div class="inner"><span class="banner-message-icon"></span>
+          <p><span class="banner-message-title">Account temporarily locked</span></p>
+          <p>Your account has been temporarily locked.</p>
+          <p>You can:</p>
+          <ul>
+            <li>retry later</li>
+            <li>click on 'Forgot Password' below</li>
+            <li>click on 'Forgot Username' below</li>
+          </ul>
+          <p></p>
+          <p>If you need assistance, please contact the RealMe Help Desk:<br>From New Zealand: {hdPhoneNumber} (toll
+            free)<br>From overseas: {hdOverseasPhoneNumber} (overseas call charges apply)</p>
+        </div>
+      </div>
+    </div>
+    <div id="main"><span id="content_CurrentLanguage" data-content="en" class="d-none"></span>
+      <div class="page">
+        <div class="inner">
+          <div class="single-page">
+            <div class="page-heading">
+              <h2 id="page-heading-title">Set up your account</h2>
+            </div>
+            <div id="api" data-name="SelfAsserted">
+              <div class="intro">
+                <p></p>
+              </div>
+              <form id="attributeVerification" action="JavaScript:void(0);">
+                <div id="passwordEntryMismatch" class="error pageLevel" style="display: none;" aria-hidden="true">The
+                  password entry fields do not match. Please enter the same password in both fields and try again.</div>
+                <div id="requiredFieldMissing" class="error pageLevel" style="display: none;" aria-hidden="true">A
+                  required field is missing. Please fill out all required fields and try again.</div>
+                <div id="fieldIncorrect" class="error pageLevel" style="display: none;" aria-hidden="true">One or more
+                  fields are filled out incorrectly. Please check your entries and try again.</div>
+                <div id="claimVerificationServerError" class="error pageLevel" style="display: none;"
+                  aria-hidden="true"></div>
+                <div id="attributeList" class="attr">
+                  <ul>
+                    <li class="VerificationControl">
+                      <p class="small">To set up an account you will need to confirm your email address:</p>
+                      <ul class="list-style-red-dot small list-inline">
+                        <li>Enter your email address and click the Send Code button</li>
+                        <li>Check your email to retrieve the Code</li>
+                        <li>Enter the code in the Confirmation Code field</li>
+                        <li>Click the Confirm Code button</li>
+                      </ul><br>
+                      <div class="attrEntry"><label id="emailVerificationControl-CreateLogin_label"
+                          for="emailVerificationControl-CreateLogin"></label>
+                        <div class="verificationControlContent" id="emailVerificationControl-CreateLogin">
+                          <div class="verificationErrorTest error">
+                            <div id="emailVerificationControl-CreateLogin_error_message" aria-hidden="true" role="alert"
+                              aria-label="" style="display: none;"></div>
+                          </div>
+                          <div class="verificationInfoText">
+                            <div id="emailVerificationControl-CreateLogin_code_sent_message" aria-hidden="true"
+                              role="alert"
+                              aria-label="A confirmation code has been sent to your email, please enter it below and confirm."
+                              style="display: none;">A confirmation code has been sent to your email, please enter it
+                              below and confirm.</div>
+                          </div>
+                          <ul>
+                            <li class="TextBox Email" aria-hidden="false" style="display: inline;">
+                              <div class="attrEntry"><input id="email" class="textInput" type="text" placeholder=" "
+                                  aria-label="Email Address" title="Email address that can be used to contact you."
+                                  aria-required="true"><label id="email_label" for="email">Email Address<span
+                                    class="input-required-indicator">*</span></label>
+                                <div class="error itemLevel" role="alert"></div>
+                              </div>
+                            </li>
+                            <li class="TextBox VerificationCode" aria-hidden="true" style="display: none;">
+                              <div class="attrEntry"><input id="verificationCode" class="textInput" type="text"
+                                  placeholder=" " aria-label="Confirmation Code" aria-required="true" disabled=""
+                                  autocomplete="off"><label id="verificationCode_label"
+                                  for="verificationCode">Confirmation Code<span
+                                    class="input-required-indicator">*</span></label>
+                                <div class="error itemLevel" role="alert"></div>
+                              </div>
+                            </li>
+                          </ul>
+                          <div class="working" style="display: none;" aria-hidden="true"></div>
+                          <div class="buttons"><button class="sendCode btn primary btn-icon"
+                              id="emailVerificationControl-CreateLogin_but_send_code" type="button"
+                              aria-label="Send Code" aria-hidden="false" style="display: inline;">
+                              <section><img src="./assets/Right_Arrow_Icon_RealMe.png"
+                                  alt="Right Arrow" class="img-icon">
+                                <span>Send Code</span>
+                              </section>
+                            </button><button class="verifyCode btn primary btn-icon"
+                              id="emailVerificationControl-CreateLogin_but_verify_code" type="button"
+                              aria-label="Confirm Code" aria-hidden="true" style="display: none;">
+                              <section><img src="./assets/Tick_Icon_RealMe.png"
+                                  alt="Confirm code" class="img-icon">
+                                <span>Confirm Code</span>
+                              </section>
+                            </button><button class="sendNewCode btn primary btn-icon"
+                              id="emailVerificationControl-CreateLogin_but_send_new_code" type="button"
+                              aria-label="Send New Code" aria-hidden="true" style="display: none;">
+                              <section><img src="./assets/Right_Arrow_Icon_RealMe.png"
+                                  alt="Right Arrow" class="img-icon">
+                                <span>Send New Code</span>
+                              </section>
+                            </button><button class="changeClaims btn primary btn-icon"
+                              id="emailVerificationControl-CreateLogin_but_change_claims" type="button"
+                              aria-label="Change" aria-hidden="true" style="display: none;">
+                              <section><img src="./assets/Right_Arrow_Icon_RealMe.png"
+                                  alt="Right Arrow" class="img-icon">
+                                <span>Change</span>
+                              </section>
+                            </button></div>
+                        </div>
+                        <div class="error itemLevel" role="alert"></div>
+                      </div>
+                    </li>
+                    <li class="TextBox">
+                      <div class="attrEntry"><input id="newSignInName" class="textInput" type="text" placeholder=" "
+                          aria-label="Username" aria-required="true"><label id="newSignInName_label"
+                          for="newSignInName">Username<span class="input-required-indicator">*</span></label>
+                        <div class="error itemLevel" role="alert"></div><span class="hint-message">Minimum 4
+                          characters.</span>
+                      </div>
+                    </li>
+                    <li class="Password">
+                      <hr>
+                      <h4>Password</h4>
+                      <p class="small">Your password must be between 8 and 64 characters long. It must contain at least
+                        three (3) of the below:</p>
+                      <ul class="list-style-red-dot small table-list">
+                        <li>uppercase (A-Z)</li>
+                        <li>lowercase (a-z)</li>
+                        <li>numbers (0-9)</li>
+                        <li>symbols (e.g. #, $, !, @, ^, &amp;, *, etc)</li>
+                      </ul><br>
+                      <div class="attrEntry"><input id="newPassword" class="textInput" type="password" placeholder=" "
+                          aria-label="Password" title="Enter new password" aria-required="true"><label
+                          id="newPassword_label" for="newPassword">Password<span
+                            class="input-required-indicator">*</span></label>
+                        <div class="error itemLevel" role="alert"></div>
+                      </div>
+                    </li>
+                    <li class="Password">
+                      <div class="attrEntry"><input id="reenterPassword" class="textInput" type="password"
+                          placeholder=" " aria-label="Password (again)"
+                          pattern="^((?=.*[a-z])(?=.*[A-Z])(?=.*\d)|(?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Za-z0-9])|(?=.*[a-z])(?=.*\d)(?=.*[^A-Za-z0-9])|(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]))([A-Za-z\d@#$%^&lt;&gt;&amp;*\-_+=[\]{}|\\:&#39;,?\/`~&quot;();!]|\.(?!@)){8,64}$"
+                          title="Confirm new password" aria-required="true"><label id="reenterPassword_label"
+                          for="reenterPassword">Password (again)<span class="input-required-indicator">*</span></label>
+                        <div class="error itemLevel" role="alert"></div>
+                      </div>
+                    </li>
+                    <li class="TextBox removed">
+                      <div class="attrEntry"><input id="reCaptchaUserToken" class="textInput" type="text"
+                          placeholder=" "><label id="reCaptchaUserToken_label" for="reCaptchaUserToken"></label>
+                        <div class="error itemLevel" role="alert"></div>
+                      </div>
+                    </li>
+                    <li class="Paragraph" style="display: none;">
+                      <div class="attrEntry"><label id="pageTitle_label" for="pageTitle"></label>
+                        <p class="textInParagraph" id="pageTitle" tabindex="0" aria-label="create a login">create a
+                          login</p>
+                        <div class="error itemLevel" role="alert"></div>
+                      </div>
+                    </li>
+                    <li class="Paragraph" style="display: none;">
+                      <div class="attrEntry"><label id="pageHeader_label" for="pageHeader"></label>
+                        <p class="textInParagraph" id="pageHeader" tabindex="0" aria-label="Set up your account">Set up
+                          your account</p>
+                        <div class="error itemLevel" role="alert"></div>
+                      </div>
+                    </li>
+                    <li class="Paragraph" style="display: none;">
+                      <div class="attrEntry"><label id="agencyLogoUrl_label" for="agencyLogoUrl">Url of the agency
+                          logo</label>
+                        <p class="textInParagraph" id="agencyLogoUrl" tabindex="0"
+                          aria-label="./assets/aHR0cHM6Ly93d3cuaW1taWdyYXRpb24uZ292dC5uei9hcHBsaWNhbnQvYjJjUFJE.png">
+                          ./assets/aHR0cHM6Ly93d3cuaW1taWdyYXRpb24uZ292dC5uei9hcHBsaWNhbnQvYjJjUFJE.png
+                        </p>
+                        <div class="error itemLevel" role="alert"></div>
+                      </div>
+                    </li>
+                    <li class="Paragraph" style="display: none;">
+                      <div class="attrEntry"><label id="headerColor_label" for="headerColor">Agency header color</label>
+                        <p class="textInParagraph" id="headerColor" tabindex="0" aria-label="#000000">#000000</p>
+                        <div class="error itemLevel" role="alert"></div>
+                      </div>
+                    </li>
+                    <li class="Paragraph" style="display: none;">
+                      <div class="attrEntry"><label id="realMeLogo_label" for="realMeLogo">The realme logo to
+                          use</label>
+                        <p class="textInParagraph" id="realMeLogo" tabindex="0" aria-label="White">White</p>
+                        <div class="error itemLevel" role="alert"></div>
+                      </div>
+                    </li>
+                    <li class="Paragraph" style="display: none;">
+                      <div class="attrEntry"><label id="goBackTo_label" for="goBackTo">The go back to agency button
+                          text</label>
+                        <p class="textInParagraph" id="goBackTo" tabindex="0" aria-label=" Immigration New Zealand">
+                          Immigration New Zealand</p>
+                        <div class="error itemLevel" role="alert"></div>
+                      </div>
+                    </li>
+                    <li class="Paragraph" style="display: none;">
+                      <div class="attrEntry"><label id="hdPhoneNumber_label" for="hdPhoneNumber">The Help desk phone
+                          number to show on error</label>
+                        <p class="textInParagraph" id="hdPhoneNumber" tabindex="0" aria-label="0508 558 855">0508 558
+                          855</p>
+                        <div class="error itemLevel" role="alert"></div>
+                      </div>
+                    </li>
+                    <li class="Paragraph" style="display: none;">
+                      <div class="attrEntry"><label id="hdOverseasPhoneNumber_label" for="hdOverseasPhoneNumber">The
+                          Help desk overseas phone number to show on error</label>
+                        <p class="textInParagraph" id="hdOverseasPhoneNumber" tabindex="0" aria-label="+64 9 914 4100">
+                          +64 9 914 4100</p>
+                        <div class="error itemLevel" role="alert"></div>
+                      </div>
+                    </li>
+                    <li class="Paragraph" style="display: none;">
+                      <div class="attrEntry"><label id="helpDeskName_label" for="helpDeskName">The Help desk agency name
+                          and number to show on error page</label>
+                        <p class="textInParagraph" id="helpDeskName" tabindex="0"
+                          aria-label="Immigration Contact Centre - Online Support">Immigration Contact Centre - Online
+                          Support</p>
+                        <div class="error itemLevel" role="alert"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="buttons">
+                  <button id="continue" type="submit" form="attributeVerification" disabled="" aria-label="Continue"
+                    class="btn primary btn-green btn-icon">
+                    <section><img src="./assets/Tick_Icon_RealMe.png" alt="Confirm code"
+                        class="img-icon">
+                      <span>Continue</span>
+                    </section>
+                  </button><button id="cancel" aria-label="Cancel" formnovalidate=""
+                    class="btn btn-red secondary btn-icon" style="display: none;">
+                    <section><img src="./assets/Cross_Icon_RealMe.png" alt="Cancel"
+                        class="img-icon">
+                      <span>Cancel</span>
+                    </section>
+                  </button><button id="cancelReload" aria-label="Cancel" formnovalidate=""
+                    class="btn btn-red secondary btn-icon">
+                    <section><img src="./assets/Cross_Icon_RealMe.png" alt="Cancel"
+                        class="img-icon">
+                      <span>Cancel</span>
+                    </section>
+                  </button>
+                </div>
+
+                <div class="verifying-modal">
+                  <div id="verifying_blurb"></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer" class="bg-web-tangerine">
+      <footer>
+        <div class="inner">
+          <nav><a href="https://www.realme.govt.nz/help/" target="_blank">Help &amp; contact us</a>
+            <a href="https://www.realme.govt.nz/terms-use/" target="_blank">Terms of use</a>
+            <a href="https://www.realme.govt.nz/privacy/" accesskey="0" target="_blank">Privacy</a>
+            <a href="https://www.realme.govt.nz/about-us-new/" target="_blank">About this site</a>
+          </nav>
+          <hr>
+          <div class="copyright"><span>© New Zealand Government.</span></div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script type="text/javascript"
+    data-preload="true">if (isIE()) { $("#ie-not-supported").show(); }
+      function isIE() { const ua = window.navigator.userAgent; const msie = ua.indexOf('MSIE '); const trident = ua.indexOf('Trident/'); return (msie > 0 || trident > 0); }</script>
+  <script id="cancelBtnContent" type="text/html" data-preload="true"><section><img src=./assets/Cross_Icon_RealMe.png alt=Cancel class=img-icon>
+<span>Cancel</span></section></script>
+  <script id="confirmBtnContent" type="text/html" data-preload="true"><section><img src=./assets/Tick_Icon_RealMe.png alt="Confirm code" class=img-icon>
+<span>Confirm code</span></section></script>
+  <script id="sendCodeBtnContent" type="text/html" data-preload="true"><section><img src=./assets/Right_Arrow_Icon_RealMe.png alt="Right Arrow" class=img-icon>
+<span>Send Code</span></section></script>
+  <script id="changeClaimsBtnContent" type="text/html" data-preload="true"><section><img src=./assets/Right_Arrow_Icon_RealMe.png alt="Right Arrow" class=img-icon>
+<span>Change</span></section></script>
+  <div>
+    <div class="grecaptcha-badge" data-style="bottomright"
+      style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;">
+      <div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation"
+          name="a-z4azm9u4zr05" frameborder="0" scrolling="no"
+          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+          src="./assets/anchor.html"></iframe></div>
+      <div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response"
+        class="g-recaptcha-response"
+        style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+    </div><iframe style="display: none;" src="./assets/saved_resource(1).html"></iframe>
+  </div>
+</body>
+
+</html>

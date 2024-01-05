@@ -1,0 +1,93 @@
+a:link {color:#336699; text-decoration:underline}
+a:visited {color:#9d0000; text-decoration:underline}
+a:hover {color:#336699; text-decoration:underline}
+A.bread:link {
+	PADDING-RIGHT: 4px; 
+	PADDING-LEFT: 4px; 
+	COLOR: #336699; 
+	TEXT-DECORATION: underline; 
+	font-family:verdana; 
+	font-size: 6.5pt;
+}
+A.bread:visited {
+	PADDING-RIGHT: 3px; 
+	PADDING-LEFT: 3px; 
+	COLOR: #336699; 
+	TEXT-DECORATION: underline; 
+	font-family:verdana; 
+	font-size: 6.5pt; 
+	margin-top: -5pt;
+}
+html {
+overflow-y: scroll;
+}
+a.toolbar:hover {
+	margin :1px;
+	padding : 0px 2px 0px 2px;
+	color : #0099CC;
+	text-decoration : none;
+}
+a.toolbar:visited {
+	border : 0;
+	margin : 1px;
+	color : #336699;
+	text-decoration : none;
+	padding : 0px 2px 0px 2px;
+}
+a.toolbar {
+	border : 0;
+	margin : 1px;
+	color : #336699;
+	text-decoration : none;
+	padding : 0px 2px 0px 2px;
+}
+span.toolbar {
+	color : #404040;
+	font-weight : bold;
+}
+#main {
+	background : #FFFFFF;
+	height : 100%;
+	margin-left : 0%;
+	margin-right : 0%;
+	margin-top : 0em;
+	margin-bottom: 0em;
+	padding-top : 0em;
+	padding-bottom: 1em
+}
+td.bottomleft,td.bottomright {
+	font-family: "Verdana", verdana, arial, helvetica, sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: #000000;
+	margin : 0;
+	padding : 4px 8px 4px 8px;
+}
+td.bottomright {
+	border-top: 1px solid #336699;
+}
+td.bottomleft {
+	border-top: 1px solid #336699;
+}
+.searchword1
+{
+    background-color: Yellow; 
+}
+.searchword2
+{
+    background-color: Yellow; 
+}
+.searchword3
+{
+    background-color: Yellow; 
+}
+.searchword4
+{
+    background-color: Yellow; 
+}
+.searchword5
+{
+    background-color: Yellow; 
+}

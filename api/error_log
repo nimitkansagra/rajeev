@@ -1,0 +1,107 @@
+[05-Jan-2024 09:34:36 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/appfedsfee/public_html/includes/classes/database.class.php:30
+Stack trace:
+#0 /home/appfedsfee/public_html/includes/classes/database.class.php(30): PDO->__construct()
+#1 /home/appfedsfee/public_html/includes/classes/function.class.php(18): Visa\Database::connect()
+#2 /home/appfedsfee/public_html/includes/load.php(20): Visa\Functions->__construct()
+#3 /home/appfedsfee/public_html/api/index.php(47): include_once('/home/appfedsfe...')
+#4 {main}
+  thrown in /home/appfedsfee/public_html/includes/classes/database.class.php on line 30
+[05-Jan-2024 09:34:40 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/appfedsfee/public_html/includes/classes/database.class.php:30
+Stack trace:
+#0 /home/appfedsfee/public_html/includes/classes/database.class.php(30): PDO->__construct()
+#1 /home/appfedsfee/public_html/includes/classes/function.class.php(18): Visa\Database::connect()
+#2 /home/appfedsfee/public_html/includes/load.php(20): Visa\Functions->__construct()
+#3 /home/appfedsfee/public_html/api/index.php(47): include_once('/home/appfedsfe...')
+#4 {main}
+  thrown in /home/appfedsfee/public_html/includes/classes/database.class.php on line 30
+[05-Jan-2024 15:31:34 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:31:34 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:31:34 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:31:34 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:31:34 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:31:34 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:31:34 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:31:34 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:31:34 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:31:34 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:31:34 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:31:34 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:31:34 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:31:34 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:31:34 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:31:34 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:31:34 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:24 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:24 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:24 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:24 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:24 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:24 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:24 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:24 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:24 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:24 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:24 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:24 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:24 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:24 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:24 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:24 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:24 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:40 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:40 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:40 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:40 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:40 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:40 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:40 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:40 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:40 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:40 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:40 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:40 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:40 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:40 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:40 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:40 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:33:40 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:35:11 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:35:11 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:35:11 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:35:11 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:35:11 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:35:11 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:35:11 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:35:11 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:35:11 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:35:11 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:35:11 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:35:11 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:35:11 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:35:11 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:35:11 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:35:11 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:35:11 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 220
+[05-Jan-2024 15:51:40 UTC] PHP Warning:  Undefined variable $i in /home/appfedsfee/public_html/includes/classes/function.class.php on line 165
+[05-Jan-2024 15:51:40 UTC] PHP Warning:  Undefined array key "" in /home/appfedsfee/public_html/includes/classes/function.class.php on line 165
+[05-Jan-2024 15:51:40 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 165
+[05-Jan-2024 15:51:40 UTC] PHP Warning:  Undefined array key "" in /home/appfedsfee/public_html/includes/classes/data.class.php on line 21
+[05-Jan-2024 15:51:40 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 174
+[05-Jan-2024 15:52:01 UTC] PHP Warning:  Undefined variable $i in /home/appfedsfee/public_html/includes/classes/function.class.php on line 165
+[05-Jan-2024 15:52:01 UTC] PHP Warning:  Undefined array key "" in /home/appfedsfee/public_html/includes/classes/function.class.php on line 165
+[05-Jan-2024 15:52:01 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 165
+[05-Jan-2024 15:52:01 UTC] PHP Warning:  Undefined array key "" in /home/appfedsfee/public_html/includes/classes/data.class.php on line 21
+[05-Jan-2024 15:52:01 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 174
+[05-Jan-2024 15:52:20 UTC] PHP Warning:  Undefined variable $i in /home/appfedsfee/public_html/includes/classes/function.class.php on line 165
+[05-Jan-2024 15:52:20 UTC] PHP Warning:  Undefined array key "" in /home/appfedsfee/public_html/includes/classes/function.class.php on line 165
+[05-Jan-2024 15:52:20 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 165
+[05-Jan-2024 15:52:20 UTC] PHP Warning:  Undefined array key "" in /home/appfedsfee/public_html/includes/classes/data.class.php on line 21
+[05-Jan-2024 15:52:20 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 174
+[05-Jan-2024 15:53:47 UTC] PHP Warning:  Undefined variable $i in /home/appfedsfee/public_html/includes/classes/function.class.php on line 165
+[05-Jan-2024 15:53:47 UTC] PHP Warning:  Undefined array key "" in /home/appfedsfee/public_html/includes/classes/function.class.php on line 165
+[05-Jan-2024 15:53:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 165
+[05-Jan-2024 15:53:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 174
+[05-Jan-2024 15:53:52 UTC] PHP Warning:  Undefined variable $i in /home/appfedsfee/public_html/includes/classes/function.class.php on line 165
+[05-Jan-2024 15:53:52 UTC] PHP Warning:  Undefined array key "" in /home/appfedsfee/public_html/includes/classes/function.class.php on line 165
+[05-Jan-2024 15:53:52 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 165
+[05-Jan-2024 15:53:52 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/appfedsfee/public_html/includes/classes/function.class.php on line 174

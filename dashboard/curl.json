@@ -1,0 +1,53 @@
+{
+    "code": 200,
+    "status": "OK",
+    "success": true,
+    "version": "v1",
+    "time": 1704437813,
+    "result": {
+        "id": "1",
+        "invoice_number": "RZ30180",
+        "issue_date": "2024-01-04",
+        "paid_date": null,
+        "user_id": "1",
+        "user": {
+            "id": "1",
+            "user_id": "CSC-Z8K4J6-2023-112641",
+            "user_username": "user",
+            "user_name": "Faisal Mir",
+            "created_at": "2024-01-04 17:26:17"
+        },
+        "invoice": {
+            "id": "1",
+            "invoice_number": "RZ30180",
+            "issue_date": "2024-01-04",
+            "paid_date": null,
+            "user_id": "1"
+        },
+        "application": {
+            "id": "1",
+            "user_id": "1",
+            "application_id": "A123FB4",
+            "submit_date": "2024-01-04",
+            "status_id": "1",
+            "invoice_id": "1",
+            "category_id": "1",
+            "value": "Submitted",
+            "category": "Visitor Visa - General",
+            "price": "246",
+            "title": "A123FB4 FAISAL MIR Visitor Visa - General"
+        },
+        "items": {
+            "data": [
+                {
+                    "id": "1",
+                    "invoice_id": "1",
+                    "category_id": "1",
+                    "category": "Visitor Visa - General",
+                    "price": "246"
+                }
+            ],
+            "sum": 246
+        }
+    }
+}
